@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFC0CB;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav{
+    padding: 50px;
+    background-image: linear-gradient(to right,#ff66c4,#ffd659);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+.nav li {
+    display: inline;
+    margin-left: 10%;
+    z-index: 5;
+}
+.nav li a{
+    color: black; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav img{
+    width: 15%;
+    padding: 2%;
+}
+
+.nav2{
+    background-color: #F06B84;
+    padding: 8px;
+    width: 22%;
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    margin: 2%;
+    margin-left: 11%;
+    margin-top: 6%;
+    position: absolute;
+}
+
+.nav li {
+   text-align: left;
+}
+
+.nav li:hover{
+    background-color: #FFC0CB;
+}
+
+.nav2 li a{
+    color: black; 
+    text-decoration: none;
+    padding: 5px;
+}
+
+.donuticon{
+    position: absolute;
+}
+
+.donuticon img{
+    width: 45%;
+    margin: 6%;
+    margin-left: 20%;
+}
+
+.usericon{
+    position: absolute;
+}
+
+.usericon img{
+    width: 45%;
+    margin-top: 63%;
+    margin-left: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 3%;
+    padding: 100px;
+}
+
+.main h1{
+    margin-left: 5%;
+}
+
+.main1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 100px;
+    margin-top: 28%;
+    margin-left: 3%;
+}
+
+.main1 h1{
+    margin-left: 5%;
+}
+
+.main button:hover{
+    background-color: #bb5a6c;
+    color: antiquewhite;
+}
+
+.main1 button:hover{
+    background-color: #bb5a6c;
+    color: antiquewhite;
+}
+
+
+.p1{
+    background-color: #F06B84;
+    margin-right: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30% ;
+}
+
+.p2{
+    background-color: #F06B84;
+    margin-right: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30% ;
+}
+
+.p3{
+    background-color: #F06B84;
+    margin-right: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30% ;
+}
+
+.p4{
+    background-color: #F06B84;
+    margin-right: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30% ;
+}
+
+
+
+
+.next {
+    margin-top: 1%;
+    padding: 2px ;
+    width: 5%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #f396a6;
+}
+
+.donut1{
+    width: 30%;
+    margin-left: 70%;
+}
+
+.btn{
+    margin-right: 12%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.btn button{
+    margin-top: 2.5%;
+    margin-left: 1%;
+    float:right;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F06B84;
+    border: none;
+    
+}
+
+.btn button:hover{
+    background-color: #f396a6;
+}
+
+.nav2 a:hover{
+    background-color: #FFC0CB;
+}
+
+
+
+
+
+  
+
+
+

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(./images/back.png); */
+    background-color: #FFC0CB;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Picture1{
+    margin: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.header img{
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.header1{
+    width: 100%;
+    display: flex;
+}
+
+.header1 img{
+    margin-left: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+/* .form{
+    background-color: #b84c65;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18%;
+    width: 10%;
+    z-index: 5;
+} */
+
+.form{
+    margin-left: 43%;
+    margin-top: 22%;
+}
+input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 8px;
+    width: 30%;
+}
+
+.back{
+    background-color:#F06B84;
+    width: 33%;
+    padding: 20px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 6%;
+    margin-left: 35%;
+    border-radius: 20px;
+}
+
+.back img{
+    width: 20px;
+}
+
+#btn{
+    background-color: #b84c65;
+    color: #FFC0CB ;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 15%;
+}
+
+.icon img{
+    width: 12%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 45%;
+}
+
+.icon1 img{
+    width: 4%;
+    position: absolute;
+    margin-top:14%;
+    margin-left: 49%;
+
+}
+
+.usericon img{
+    width: 1.5%;
+    position: absolute;
+    margin-top:28%;
+    margin-left: 44%;
+    z-index: -1;
+}
+
+.bottom img{
+    width: 35%;
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 34%;
+}
+
+
+#reset{
+    text-align: center;
+}

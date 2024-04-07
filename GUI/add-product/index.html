@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./images/chocolate.png" alt="" srcset="">
+        <img src="./images/chocolate.png" alt="" srcset="">
+    </div>
+    <div class="header1">
+        <img src="./images/chocolate.png" alt="" srcset="">
+    </div>
+    <div class="Picture1">
+        <img src="./images/Picture1.png" alt="" srcset="">
+    </div>
+    <div class="back">
+        <a href="../chocolate/index.html"><img src="./images/Picture2.png" alt="" srcset=""></a>
+    </div>
+    <div class="bottom">
+        <img src="./images/Picture3.png" alt="" srcset="">
+    </div>
+
+    <div class="form">
+        <form name = "form" action= "reset.php"method = "POST">
+            <h1>Add Product</h1></br>
+            <label>Product Name</label></br>
+            <input type="text" id="pname" name="pname"> </br> </br>
+            <label>Product ID</label></br>
+            <input type="text" id="contact" name="contact"> </br> </br>
+            <div class="options">
+                <label>Price</label></br>
+                <input type="number" id="price" name="price"> </br> </br>
+                <label>Quantity</label></br>
+                <input type="number" id="quantity" name="quantity"> </br> </br>
+            </div>
+            <label>Supplier</label></br>
+            <input type="text" id="supplier" name="supplier"> </br> </br>
+            <div class="form1">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="photo">Select a photo</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+                <input type="submit" value="Upload">
+            </form>
+            </div>
+            <!-- <input type="submit" id="btn" value="SUBMIT" name="submit">  -->
+        </form>
+        <a href="../notifications/add-notif/index.html"><input type="submit" id="btn" value="SUBMIT" name="submit"> </a>
+    </div>
+
+
+
+</body>
+</html>

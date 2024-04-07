@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(./images/back.png); */
+    background-color: #FFC0CB;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.Picture1{
+    margin: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+}
+
+.header img{
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.header1{
+    width: 100%;
+    display: flex;
+}
+
+.header1 img{
+    margin-left: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+.form{
+    margin-left: 45%;
+    margin-top: 13%;
+    position: absolute;;
+}
+
+input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 4px;
+    width: 100%;
+}
+
+.back{
+    background-color: #F06B84;
+    width: 30%;
+    padding: 20px;
+    height: 350px;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 38%;
+    border-radius: 20px;
+}
+
+.back img{
+    width: 20px;
+}
+
+.form button {
+    background-color: #b84c65;
+    color: #FFC0CB ;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 30%;
+}
+
+
+
+.bottom img{
+    width: 32%;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 37%;
+    z-index: 2;
+}
+
+label{
+    padding: 2px;
+    
+}
+

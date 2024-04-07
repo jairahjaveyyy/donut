@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFC0CB;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav{
+    padding: 50px;
+    background-image: linear-gradient(to right,#ff66c4,#ffd659);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+
+.nav li:hover{
+  background-color: #FFC0CB;
+}
+
+.nav li {
+    display: inline;
+    margin-left: 10%;
+    z-index: 5;
+}
+.nav li a{
+    color: black; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav img{
+    width: 15%;
+    padding: 2%;
+}
+
+.nav2{
+    background-color: #F06B84;
+    padding: 8px;
+    width: 17%;
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    margin: 2%;
+    margin-left: 12.5%;
+    /* margin-top: 6%; */
+    position: absolute;
+}
+
+.nav2 li:hover{
+  background-color: #FFC0CB;
+}
+
+
+.nav li {
+   text-align: left;
+}
+
+.nav2 li a{
+    color: black; 
+    text-decoration: none;
+    padding: 5px;
+}
+
+.donuticon{
+    position: absolute;
+}
+
+.donuticon img{
+    width: 45%;
+    margin: 6%;
+    margin-left: 20%;
+}
+
+.usericon{
+    position: absolute;
+}
+
+.usericon img{
+    width: 45%;
+    margin-top: 63%;
+    margin-left: 100%;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+  }
+  
+  td, th {
+    border: 2px solid #B84C65;
+    text-align: center;
+    padding: 5px;
+  }
+
+  th{
+    background-color: #F06B84;
+  }
+
+  td button{
+    background-color: #B84C65;
+    padding: 2px;
+    border-radius: 10px;
+  }
+
+  td input{
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+    background-color: transparent;
+    border-color: #B84C65;
+    box-shadow: none;
+  }
+
+  .data{
+    margin-top: 2%;
+  }
+
+  .data img{
+    width: 2%;
+    margin-right: 1%;
+  }
+
+  .search-container{
+    margin-top: 3%;
+    margin-left: 69.7%;
+  }
+
+  #search-input{
+    background-color: transparent;
+    padding: 5px;
+  }
+
+  #search-button{
+    background-color: #B84C65;
+    padding: 5px;
+  }
+ 
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="donuticon"><img src="./images/donuticon.png" alt="" srcset=""> </div>
+    <div class="usericon"><img src="./images/usericon.png" alt="" srcset=""> </div>
+    
+
+    <div class="nav">
+      <li> <a href="../profile/index.html">USER</a> </li>
+      <li> <a href="../home/index.html"><img src="./images/homeicon.png" alt="" srcset="">HOME</a> </li>
+      <li> <a href="../chocolate/index.html"><img src="./images/producticon.png" alt="" srcset="">PRODUCT</a> </li>
+      <li> <a href="../out-stock/index.html"><img src="./images/inventoryicon.png" alt="" srcset="">INVENTORY</a> </li>
+      <li> <a href="../Login/index.html"><img src="./images/signouticon.png" alt="" srcset="">SIGN OUT</a> </li>
+  </div>
+
+    <div class="nav2">
+      <li> <a href="../out-stock/index.html">Out of Stock</a> </li>
+      <li> <a href="../low-stock/index.html">Low Stock</a> </li>
+      <li> <a href="../full-stock/index.html">Full</a> </li>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button id="search-button" onclick="search()">Search</button>
+</div>
+
+<center>
+<div class="data">
+<table>
+  <tr>
+    <th>PRODUCT ID</th>
+    <th>NAME</th>
+    <th>PRICE</th>
+    <th>QUANTITY</th>
+    <th>STATUS</th>
+    <th>SUPPLIER</th>
+  </tr>
+  <tr>
+    <td>DNT25</td>
+    <td>PLANE</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity1')">+</button>
+      <input type="number" id="quantity1" value="0">
+      <button onclick="decreaseQuantity('quantity1')">-</button></td>
+    <td>FULL</td>
+    <td>STARBUCKS</td>
+  </tr>
+  <tr>
+    <td>DNT26</td>
+    <td>W/ VANILLA</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity2')">+</button>
+      <input type="number" id="quantity2" value="0">
+      <button onclick="decreaseQuantity('quantity2')">-</button></td>
+      <td>FULL</td>
+    <td>DUNKIN DONUT</td>
+  </tr>
+  <tr>
+    <td>DNT27</td>
+    <td>W/ SPRINKLES</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity3')">+</button>
+      <input type="number" id="quantity3" value="0">
+      <button onclick="decreaseQuantity('quantity3')">-</button></td>
+      <td>FULL</td>
+    <td>COFFEE PASTE</td>
+  </tr>
+  <tr>
+    <td>DNT28</td>
+    <td>W/ CHOCOLATE</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity4')">+</button>
+      <input type="number" id="quantity4" value="0">
+      <button onclick="decreaseQuantity('quantity4')">-</button></td>
+      <td>FULL</td>
+    <td>STARBUCKS</td>
+  </tr>
+  <tr>
+    <td>DNT29</td>
+    <td>MATCHALOVE</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity5')">+</button>
+      <input type="number" id="quantity5" value="0">
+      <button onclick="decreaseQuantity('quantity5')">-</button></td>
+      <td>FULL</td>
+    <td>DUNKIN DONUT</td>
+  </tr>
+  <tr>
+    <td>DNT30</td>
+    <td>W/ POWDER</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity6')">+</button>
+      <input type="number" id="quantity6" value="0">
+      <button onclick="decreaseQuantity('quantity6')">-</button></td>
+      <td>FULL</td>
+    <td>COFFEE PASTE</td>
+  </tr>
+  <tr>
+    <td>DNT31</td>
+    <td>NEW</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity7')">+</button>
+      <input type="number" id="quantity7" value="0">
+      <button onclick="decreaseQuantity('quantity7')">-</button></td>
+      <td>FULL</td>
+    <td>STARBUCKS</td>
+  </tr>
+  <tr>
+    <td>DNT32</td>
+    <td>NEW</td>
+    <td>₱100</td>
+    <td><button onclick="increaseQuantity('quantity8')">+</button>
+      <input type="number" id="quantity8" value="0">
+      <button onclick="decreaseQuantity('quantity8')">-</button></td>
+      <td>FULL</td>
+    <td>DUNKIN DONUT</td>
+  </tr>
+  <tr>
+    
+</table>
+</center>
+</div>
+
+<script>
+    function increaseQuantity(quantityId) {
+        var quantityElement = document.getElementById(quantityId);
+        var currentQuantity = parseInt(quantityElement.value);
+        quantityElement.value = currentQuantity + 1;
+    }
+
+    function decreaseQuantity(quantityId) {
+        var quantityElement = document.getElementById(quantityId);
+        var currentQuantity = parseInt(quantityElement.value);
+        if (currentQuantity > 0) {
+            quantityElement.value = currentQuantity - 1;
+        }
+    }
+
+    function search() {
+        var searchTerm = document.getElementById("search-input").value;
+        // Perform your search operation here with searchTerm
+        alert("You searched for: " + searchTerm);
+    }
+
+      // Assume you have an existing quantity stored in a variable
+  var existingQuantity = 50; // Replace this with your actual existing quantity value
+
+  // Function to set the existing quantity value to the input field
+  function setExistingQuantity(inputId, quantity) {
+      document.getElementById(inputId).value = quantity;
+  }
+
+  // Call the function to set the existing quantity
+  setExistingQuantity('quantity1', existingQuantity);
+  setExistingQuantity('quantity2', existingQuantity);
+  setExistingQuantity('quantity3', existingQuantity);
+  setExistingQuantity('quantity4', existingQuantity);
+  setExistingQuantity('quantity5', existingQuantity);
+  setExistingQuantity('quantity6', existingQuantity);
+  setExistingQuantity('quantity7', existingQuantity);
+  setExistingQuantity('quantity8', existingQuantity);
+
+
+</script>
+
+    
+</body>
+</html>
